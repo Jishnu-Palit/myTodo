@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Body background */
+body {
+  padding: 50px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* Main app container */
+.app {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 420px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #007acc;
+  letter-spacing: 2px;
+}
+
+/* Date styling */
+.date {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Input section */
+.to-do-input {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.to-do-input input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  background: #f5f5f5;
+  color: #333;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.to-do-input input:focus {
+  background: #fff;
+  border-color: #007acc;
+}
+
+.to-do-input input::placeholder {
+  color: #999;
+}
+
+.to-do-input button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background: #007acc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.to-do-input button:hover {
+  background: #0099ff;
+  transform: scale(1.05);
+}
+
+/* Task list */
+.to-do-list {
+  margin-top: 1.5rem;
+}
+
+/* Task item */
+.item {
+  background: #f5f5f5;
+  padding: 0.9rem;
+  margin-bottom: 0.9rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateX(6px);
+  background: #eaeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed task style */
+.item.done span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Task text */
+.item span {
+  flex: 1;
+  color: #333;
+}
+
+/* Delete button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #d32f2f;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+  color: #f44336;
+}
+
